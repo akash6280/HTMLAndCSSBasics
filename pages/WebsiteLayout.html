@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Example</title>
+        <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+        .navigationBar {
+            background: #D7E8D4;
+            flex: 1;
+        }
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
+        .mainContentItem {
+            display: flex;
+            flex-direction: column;
+        }
+        .mainContentItem > article {
+            flex: 4;
+            min-height: 20vh;
+        }
+        header, footer {
+            background: yellowgreen;
+            height: 20vh;
+        }
+        header, footer, article, nav {
+            padding: 1em;
+        }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navigationBar">Nav</nav>
+        <div class="mainContainer">
+            <header>Header</header>
+            <main class="mainContentItem">
+                <article> 
+                    <h2>First article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p> Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                </article>
+            </main>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
